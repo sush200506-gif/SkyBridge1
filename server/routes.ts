@@ -2,8 +2,11 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 
-// 👇 ADD THIS IMPORT
+// Token routes
 import { registerTokenRoutes } from "./src/routes/tokens.routes";
+
+// Cargo routes
+import { registerCargoRoutes } from "./src/routes/cargo.routes";
 
 export async function registerRoutes(
   httpServer: Server,
@@ -11,11 +14,13 @@ export async function registerRoutes(
 ): Promise<Server> {
   // prefix all routes with /api
 
-  // 👇 REGISTER TOKEN ROUTES
+  // Register token-related APIs
   registerTokenRoutes(app);
 
-  // other routes will be added here later (cargo, bids, etc.)
+  // Register cargo-related APIs
+  registerCargoRoutes(app);
+
+  // More routes (bids, etc.) will be added here later
 
   return httpServer;
 }
-
