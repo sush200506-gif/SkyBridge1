@@ -2,15 +2,20 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 
+// 👇 ADD THIS IMPORT
+import { registerTokenRoutes } from "./src/routes/tokens.routes";
+
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  // put application routes here
   // prefix all routes with /api
 
-  // use storage to perform CRUD operations on the storage interface
-  // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
+  // 👇 REGISTER TOKEN ROUTES
+  registerTokenRoutes(app);
+
+  // other routes will be added here later (cargo, bids, etc.)
 
   return httpServer;
 }
+
