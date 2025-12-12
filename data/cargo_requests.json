@@ -1,0 +1,29 @@
+[
+  {
+    "id": "CRG001",
+    "origin": "DEL",
+    "destination": "BOM",
+    "weightKg": 500,
+    "volumeM3": 2.0,
+    "priority": "CRITICAL",
+    "description": "Emergency medical supplies"
+  },
+  {
+    "id": "CRG002",
+    "origin": "BLR",
+    "destination": "MAA",
+    "weightKg": 1200,
+    "volumeM3": 4.0,
+    "priority": "HIGH",
+    "description": "Consumer electronics"
+  },
+  {
+    "id": "CRG003",
+    "origin": "BOM",
+    "destination": "CCU",
+    "weightKg": 2000,
+    "volumeM3": 8.0,
+    "priority": "STANDARD",
+    "description": "Garment exports"
+  }
+]
