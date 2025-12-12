@@ -1,0 +1,26 @@
+[
+  {
+    "id": "AI_CARGO",
+    "name": "Air India Cargo",
+    "hub": "DEL",
+    "fleet": ["B777F", "A330F"]
+  },
+  {
+    "id": "INDIGO_CARGO",
+    "name": "IndiGo CarGo",
+    "hub": "BLR",
+    "fleet": ["A320F"]
+  },
+  {
+    "id": "VISTARA_CARGO",
+    "name": "Vistara Cargo",
+    "hub": "DEL",
+    "fleet": ["A321F"]
+  },
+  {
+    "id": "SPICEJET_CARGO",
+    "name": "SpiceXpress",
+    "hub": "BOM",
+    "fleet": ["B737F"]
+  }
+]
