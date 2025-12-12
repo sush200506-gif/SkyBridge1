@@ -8,6 +8,9 @@ import { registerTokenRoutes } from "./src/routes/tokens.routes";
 // Cargo routes
 import { registerCargoRoutes } from "./src/routes/cargo.routes";
 
+// Bid routes
+import { registerBidRoutes } from "./src/routes/bids.routes";
+
 export async function registerRoutes(
   httpServer: Server,
   app: Express
@@ -20,7 +23,10 @@ export async function registerRoutes(
   // Register cargo-related APIs
   registerCargoRoutes(app);
 
-  // More routes (bids, etc.) will be added here later
+  // Register bid-related APIs
+  registerBidRoutes(app);
+
+  // More routes (bid acceptance, etc.) will be added here
 
   return httpServer;
 }
