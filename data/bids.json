@@ -1,0 +1,23 @@
+[
+  {
+    "bidId": "BID001",
+    "cargoId": "CRG001",
+    "airlineId": "AI_CARGO",
+    "tokens": 106,
+    "remarks": "Fastest delivery with priority handling"
+  },
+  {
+    "bidId": "BID002",
+    "cargoId": "CRG002",
+    "airlineId": "INDIGO_CARGO",
+    "tokens": 176,
+    "remarks": "Economical short-haul option"
+  },
+  {
+    "bidId": "BID003",
+    "cargoId": "CRG003",
+    "airlineId": "SPICEJET_CARGO",
+    "tokens": 287,
+    "remarks": "Consolidated cargo routing"
+  }
+]
