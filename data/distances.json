@@ -1,0 +1,18 @@
+{
+  "DEL-BOM": 1150,
+  "DEL-BLR": 1740,
+  "DEL-HYD": 1260,
+  "DEL-MAA": 1760,
+  "DEL-CCU": 1300,
+
+  "BOM-BLR": 840,
+  "BOM-HYD": 710,
+  "BOM-MAA": 1030,
+
+  "BLR-HYD": 500,
+  "BLR-MAA": 290,
+
+  "HYD-MAA": 520,
+  "MAA-CCU": 1370,
+  "HYD-CCU": 1180
+}

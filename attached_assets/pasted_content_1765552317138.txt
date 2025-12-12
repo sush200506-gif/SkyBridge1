@@ -1,0 +1,86 @@
+ROLE SELECTION PAGE Prompt:
+“Create a clean aviation-themed landing page for SkyBridge with three large role buttons: Cargo Agent, Airline Admin, and Alliance Manager. Use card-style buttons, icons, and a blue-white professional design. Add tagline: ‘Unified Cargo Collaboration Platform.’”
+
+ 2. CARGO REQUEST PAGE Prompt:
+
+“Generate a cargo request form for SkyBridge. Include fields: Origin, Destination, Weight (kg), Volume (m³), Priority (Low/Normal/High/Emergency), Temperature Sensitive toggle, and a Submit Request button. Use a modern form layout with section headers and aviation UI theme.”
+
+ 3. CAPACITY CHECK PAGE Prompt:
+
+“Create a capacity-check screen showing a table of airlines with columns: Airline Name, Available Capacity (kg), ETA (hours), Loyalty Score, and Status (Available/Full). Add a panel that displays ‘No Capacity? Suggest Swap’ and a button ‘View Swap Suggestions’ when no airline qualifies.”
+
+ 4. SWAP SUGGESTION PAGE Prompt:
+
+“Design a swap suggestion page that lists alternative airlines with available capacity in card format. Each card shows airline name, capacity left, ETA, and loyalty score, with a ‘Select Airline’ button. Add a header: ‘Recommended Swap Airlines.’”
+
+ 5. BIDDING DASHBOARD (Main Bidding UI) Prompt:
+
+“Create a reverse-auction bidding dashboard for SkyBridge. Show cargo details at the top, then a table of airlines with fields: Bid Amount input box, ETA input box, Loyalty Score (read-only), and a ‘Submit Bid’ button. Add a live ranking panel showing L1, L2, L3 (top bids) with highlight for the current leading airline. Include auction timer countdown at the top.”
+
+ 6. BID RESULTS / WINNER PAGE Prompt:
+
+“Build a bid results page that highlights the winning airline with a green banner: ‘Winning Bid Selected.’ Show bid amount, ETA, airline loyalty score, and score calculation summary. Add a ‘Proceed to Insurance’ button.”
+
+ 7. INSURANCE OFFER PAGE (SkyShield Add-On) Prompt:
+
+“Design a Smart Insurance (SkyShield) selection page. Show cargo details, winning bid summary, and a checkbox: ‘Add Smart Insurance’. When checked, display calculated premium breakdown: Base Premium, Risk Adjustment (priority & temp-sensitive), Loyalty Discount, Final Premium. Add a ‘Continue to Payment’ button. Clean fintech-style UI with blue accents.”
+
+ 8. PAYMENT PAGE (Bid Amount + Insurance) Prompt:
+
+“Create a payment summary page showing: Bid Amount, Insurance Premium, Total Payable. Add two payment options: ‘Pay with Money’ and ‘Pay with Tokens’, each as large buttons. Include test payment UI suitable for Stripe/Razorpay mock. After payment, show a confirmation card and a ‘Confirm Booking’ button.”
+
+ 9. BOOKING CONFIRMATION PAGE Prompt:
+
+“Generate a booking confirmation page with a success banner: ‘Cargo Booking Confirmed’. Show assigned airline, ETA, insurance status, and next steps. Include buttons: ‘View IoT Monitoring’ and ‘Track Cargo’. Design with aviation theme and success icons.”
+
+ 10. IoT MONITORING PAGE Prompt:
+
+“Create an IoT monitoring dashboard with three sensor cards: Temperature, Humidity, Shock Level. Display live readings fetched from API. Add a large red alert banner that appears when temperature exceeds threshold or shock equals ‘high’. Include a button: ‘Trigger Emergency Reroute.’”
+
+ 11. EMERGENCY REROUTE PAGE Prompt:
+
+“Build an emergency rerouting page that displays a red warning header: ‘Emergency Detected!’. Show recommended fastest airline with ETA, capacity, and reliability score. Add two buttons: ‘Approve Reroute’ and ‘Skip’. Use urgency-style UI.”
+
+ 12. RFID TRACKING SIMULATION PAGE Prompt:
+
+“Design an RFID tracking page with a horizontal stepper showing cargo journey stages: Warehouse → Loading → In Flight → Transit Hub → Destination. Show live status updates and timestamps. Use animated progress UI if available.”
+
+ 13. TOKEN WALLET PAGE Prompt:
+
+“Create a token summary page showing Total Tokens, Tokens Earned, Tokens Spent, and Transaction History table. Add icons for add/remove tokens. Style like a digital wallet.”
+
+ 14. ALLIANCE MANAGER DASHBOARD Prompt:
+
+“Generate an analytics dashboard for an Alliance Manager with charts and KPIs: Total Swaps Completed, CO₂ Savings, Bidding Activity, Airline Loyalty Rankings, Emergency Reroutes Count, Insurance Purchases. Use card-style metrics and light blue aviation theme.”
+
+ 15. ADMIN SETTINGS PAGE (Optional) Prompt:
+
+“Create an admin settings page to manage airlines, cargo rules, insurance multipliers, and IoT threshold settings. Use forms and sliders for adjusting values.”
+15:26
+0 Prompt for Animated SkyBridge Landing Page (Exact Theme Match)
+
+“Create a premium aviation-themed landing page for SkyBridge with the same visual style as a modern logistics SaaS homepage.
+
+VISUAL STYLE: – Dark airport background image with a strong black overlay (same vibe as screenshot). – Large bold title in serif font (orange #F4A53C), with typing animation ending in a blinking cursor. – Subtitle below it in white/grey, describing SkyBridge as a real-time cargo capacity platform. – Include subtle floating particles or dust animations for a tech feel. – Add glowing hover effects on buttons. – Use orange (#F4A53C), black (#0D0D0D), and dark grey (#1A1A1A) theme.
+
+NAVBAR: – Left: Logo ‘SB SkyBridge’ – Right: Dashboard | Book Cargo | Security | Login (Login button styled in orange with rounded corners) – Sticky on top with transparent dark background.
+
+HERO SECTION: – Full-screen hero with airport night photo background + dark gradient overlay. – Large headline with typing animation: ‘Real-Time Cargo |’ – Sub-text: ‘Advanced cloud platform for real-time cargo capacity sharing, booking, and management across partner airlines with robust security and intuitive collaboration.’ – Two CTA buttons: • ‘Access Dashboard’ (solid orange, glowing hover) • ‘Watch Demo’ (outline orange) – Buttons should animate on hover (scale + glow).
+
+ANIMATIONS: – Typing animation for headline. – Slow floating particles in background. – Fade-in transition for hero content. – Smooth page-load animation for navbar + headline.
+
+LAYOUT: – Center-aligned hero text. – Buttons horizontally aligned like screenshot. – Clean, professional SaaS layout suitable for a hackathon demo.
+
+Keep everything responsive and polished.” Create a premium aviation-themed landing page for SkyBridge with the same visual style as a modern logistics SaaS homepage.
+
+VISUAL STYLE: – Dark airport background image with a strong black overlay (same vibe as screenshot). – Large bold title in serif font (orange #F4A53C), with typing animation ending in a blinking cursor. – Subtitle below it in white/grey, describing SkyBridge as a real-time cargo capacity platform. – Include subtle floating particles or dust animations for a tech feel. – Add glowing hover effects on buttons. – Use orange (#F4A53C), black (#0D0D0D), and dark grey (#1A1A1A) theme.
+
+NAVBAR: – Left: Logo ‘SB SkyBridge’ – Right: Dashboard | Book Cargo | Security | Login (Login button styled in orange with rounded corners) – Sticky on top with transparent dark background.
+
+HERO SECTION: – Full-screen hero with airport night photo background + dark gradient overlay. – Large headline with typing animation: ‘Real-Time Cargo |’ – Sub-text: ‘Advanced cloud platform for real-time cargo capacity sharing, booking, and management across partner airlines with robust security and intuitive collaboration.’ – Two CTA buttons: • ‘Access Dashboard’ (solid orange, glowing hover) • ‘Watch Demo’ (outline orange) – Buttons should animate on hover (scale + glow).
+
+ANIMATIONS: – Typing animation for headline. – Slow floating particles in background. – Fade-in transition for hero content. – Smooth page-load animation for navbar + headline.
+
+LAYOUT: – Center-aligned hero text. – Buttons horizontally aligned like screenshot. – Clean, professional SaaS layout suitable for a hackathon demo.
+
+Keep everything responsive and polished.

@@ -1,0 +1,10 @@
+<<<<<<< HEAD
+node_modules
+=======
+node_modules
+dist
+.DS_Store
+server/public
+vite.config.ts.*
+*.tar.gz
+>>>>>>> 90f6320 (Extracted stack files)
