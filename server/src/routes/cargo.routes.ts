@@ -39,4 +39,10 @@ export function registerCargoRoutes(app: Express) {
       status: "OPEN",
     });
   });
+
+  // GET ALL CARGO
+  app.get("/api/cargo", async (_req: Request, res: Response) => {
+    const allCargo = await db.select().from(cargo);
+    res.json(allCargo);
+  });
 }
