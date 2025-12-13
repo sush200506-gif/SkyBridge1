@@ -1,61 +1,45 @@
 import { useEffect, useState } from "react";
-import { getCargo, acceptBid } from "../api/client";
-import { Cargo } from "../types";
+import { getCargoList } from "../api/client";
+
+type Cargo = {
+  id: number;
+  origin: string;
+  destination: string;
+  weightKg: number;
+  priority: string;
+};
 
 export default function Dashboard() {
-  const [cargoList, setCargoList] = useState<Cargo[]>([]);
+  const [cargo, setCargo] = useState<Cargo[]>([]);
 
   useEffect(() => {
-    getCargo().then(setCargoList);
+    getCargoList().then(setCargo);
   }, []);
 
-  const handleAccept = async (bidId: string) => {
-    try {
-      await acceptBid(bidId);
-      alert("Bid accepted");
-    } catch {
-      alert("Failed to accept bid");
-    }
-  };
-
   return (
-    <div className="p-6 space-y-6">
-      <h1 className="text-2xl font-bold">Dashboard</h1>
+    <div>
+      <h2>Live Cargo Dashboard</h2>
 
-      {cargoList.map((cargo) => (
-        <div key={cargo.id} className="border rounded p-4 space-y-2">
-          <div>
-            <strong>{cargo.origin}</strong> →{" "}
-            <strong>{cargo.destination}</strong>
-          </div>
-
-          <div>Priority: {cargo.priority}</div>
-
-          <div className="mt-2">
-            <h3 className="font-semibold">Bids</h3>
-
-            {cargo.bids && cargo.bids.length > 0 ? (
-              cargo.bids.map((bid) => (
-                <div
-                  key={bid.id}
-                  className="flex justify-between border p-2 rounded mt-1"
-                >
-                  <span>{bid.airline}</span>
-                  <span>{bid.tokensQuoted} tokens</span>
-                  <button
-                    onClick={() => handleAccept(bid.id)}
-                    className="btn-small"
-                  >
-                    Accept
-                  </button>
-                </div>
-              ))
-            ) : (
-              <p className="text-sm text-gray-500">No bids yet</p>
-            )}
-          </div>
-        </div>
-      ))}
+      <table border={1} cellPadding={8}>
+        <thead>
+          <tr>
+            <th>Origin</th>
+            <th>Destination</th>
+            <th>Weight (kg)</th>
+            <th>Priority</th>
+          </tr>
+        </thead>
+        <tbody>
+          {cargo.map((c) => (
+            <tr key={c.id}>
+              <td>{c.origin}</td>
+              <td>{c.destination}</td>
+              <td>{c.weightKg}</td>
+              <td>{c.priority}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
